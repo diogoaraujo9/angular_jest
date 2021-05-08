@@ -8,7 +8,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --runInBand"
   },
   "jest": {
     "preset": "jest-preset-angular",

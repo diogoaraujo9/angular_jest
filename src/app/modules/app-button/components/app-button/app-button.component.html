@@ -1,0 +1,13 @@
+<button (click)="refreshCat()">
+    Get Random Cat
+</button>
+
+<ng-container *ngIf="cat?.url">
+    <img
+        alt="Random cat"
+        [src]="cat?.url" />
+
+</ng-container>
+<ng-container *ngIf="cat?.url">
+    <p>Loading</p>
+</ng-container>
