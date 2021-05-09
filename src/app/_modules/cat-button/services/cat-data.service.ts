@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { Subject } from "rxjs";
 
 @Injectable()
-export class AppButtonService
+export class CatDataService
 {
     public onClick$: Subject<number> = new Subject<number>();
     private value: number = 42;

@@ -1,4 +1,6 @@
-<button (click)="refreshCat()">
+<button 
+    class="cat-button"
+    (click)="refreshCat()">
     Get Random Cat
 </button>
 
@@ -8,6 +10,6 @@
         [src]="cat?.url" />
 
 </ng-container>
-<ng-container *ngIf="cat?.url">
-    <p>Loading</p>
+<ng-container *ngIf="!cat?.url">
+    <p class="cat-loading-message">Loading</p>
 </ng-container>

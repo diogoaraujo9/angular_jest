@@ -1,16 +1,16 @@
 import { TestBed } from "@angular/core/testing";
-import { AppButtonService } from "./app-button.service";
+import { CatDataService } from "./cat-data.service";
 
 describe('AppButtonService', () => {
-    let service: AppButtonService;
+    let service: CatDataService;
     let expectedValue = 42;
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            providers: [ AppButtonService ]
+            providers: [ CatDataService ]
         });
 
-        service = TestBed.inject(AppButtonService);
+        service = TestBed.inject(CatDataService);
     });
 
     it('pegar valor estático', () => {

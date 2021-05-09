@@ -4,11 +4,11 @@ import Cat from 'src/app/_domain/models/cat';
 import { CatService } from 'src/app/_domain/services/cat.service';
 
 @Component({
-    selector: 'app-button',
-    templateUrl: './app-button.component.html',
-    styleUrls: ['./app-button.component.scss']
+    selector: 'cat-button',
+    templateUrl: './cat-button.component.html',
+    styleUrls: ['./cat-button.component.scss']
 })
-export class AppButtonComponent implements OnInit, OnDestroy {
+export class CatButtonComponent implements OnInit, OnDestroy {
     public cat: Cat;
     private subscription = new Subscription();
 
@@ -23,8 +23,8 @@ export class AppButtonComponent implements OnInit, OnDestroy {
     }
 
     public refreshCat(): void {
-        this._catService.getRandom().subscribe(_cat => {
+        this.subscription.add(this._catService.getRandom().subscribe(_cat => {
             this.cat = _cat[0];
-        });
+        }));
     }
 }

@@ -3,7 +3,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { ButtonModule } from './modules/app-button/app-button.module';
+import { CatButtonModule } from './_modules/cat-button/cat-button.module';
 import { CatService } from './_domain/services/cat.service';
 
 describe('AppComponent', () => {
@@ -12,7 +12,7 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         HttpClientTestingModule,
-        ButtonModule
+        CatButtonModule
       ],
       declarations: [
         AppComponent

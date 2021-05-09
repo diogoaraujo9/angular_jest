@@ -18,8 +18,7 @@ export class CatService
         });
     }
 
-    public getRandom(): Observable<Cat[]>
-    {
+    public getRandom(): Observable<Cat[]> {
         const url = `${this.baseUrl}/images/search`;
         
         return this.http.get<Cat[]>(url, {

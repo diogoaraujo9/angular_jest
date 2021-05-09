@@ -4,7 +4,7 @@
 
 export const environment = {
     production: false,
-    catApiKey: ''
+    catApiKey: '34898a2e-0607-4f7f-94a7-79ef7e5d9006'
 };
 
 /*
