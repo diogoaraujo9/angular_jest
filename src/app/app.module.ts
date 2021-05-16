@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CatButtonModule } from './_modules/cat-button/cat-button.module';
 import { RandomButtonModule } from './_modules/random-button/random-button.module';
+import { IncrementButtonModule } from './_modules/increment-button/increment-button.module';
 
 @NgModule({
     declarations: [
@@ -15,7 +16,8 @@ import { RandomButtonModule } from './_modules/random-button/random-button.modul
         AppRoutingModule,
         CatButtonModule,
         HttpClientModule,
-        RandomButtonModule
+        RandomButtonModule,
+        IncrementButtonModule
     ],
     providers: [],
     bootstrap: [AppComponent]
